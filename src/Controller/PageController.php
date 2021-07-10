@@ -2,11 +2,17 @@
 
 namespace Code\Controller;
 
+use Code\View\View;
+
 class PageController
 {
 
     public function index()
     {
-        return 'Hello World!!!';
+        $view = new View('site/index.phtml');
+
+        $view->name = "Alexandre Palma Gonçalves";
+
+        return $view->render();
     }
 }

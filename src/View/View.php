@@ -1,6 +1,6 @@
 <?php
 
-namespace View;
+namespace Code\View;
 
 class View
 {
@@ -21,7 +21,7 @@ class View
 
     public function __get($index)
     {
-        $this->data[$index];
+        return $this->data[$index];
     }
 
     public function render()
@@ -29,7 +29,7 @@ class View
 
         ob_start();
 
-        require VIEWS_PATH . $this . view;
+        require VIEWS_PATH . $this->view;
 
         return ob_get_clean();
     }
