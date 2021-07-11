@@ -1,29 +1,36 @@
 <?php require VIEWS_PATH . 'includes/header.phtml'; ?>
 
-
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="<?php echo HOME ?>">Master Courses</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="<?php echo HOME ?>/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?= HOME ?>/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo HOME ?>/contact">Contact</a>
-                </li>
-            </ul>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div>
+            <h3 class="float-md-start mb-0">Master Course</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link active" aria-current="page" href="<?= HOME ?>">Home</a>
+                <a class="nav-link" href="<?= HOME ?>about">About</a>
+                <a class="nav-link" href="<?= HOME ?>contact">Contact</a>
+            </nav>
         </div>
-    </div>
-</nav>
-<br>
-<br>
-<br>
+    </header>
 
-<?php require VIEWS_PATH . 'includes/footer.phtml'; ?>
+    <main class="px-3">
+        <h1>About Us</h1>
+        <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu venenatis erat, id porta lorem.
+            Suspendisse potenti. Maecenas eu vestibulum tellus, eget facilisis metus. Sed lectus sem, congue non accumsan sed, facilisis a odio. Duis aliquam molestie efficitur.
+            Sed sem purus, lacinia nec justo at, euismod vulputate metus. Nam a rhoncus libero. Etiam aliquet sapien a semper gravida. Nullam feugiat volutpat tortor vel pharetra.
+            Donec lacinia efficitur enim, vitae dapibus quam ullamcorper eu. Quisque sit amet mollis magna, nec pellentesque odio. Etiam convallis tristique quam vel congue.
+            Duis nec mi eu sem iaculis hendrerit. Vivamus cursus, risus sed tincidunt mollis, erat justo faucibus leo, in tempor est eros et metus.
+            Integer tristique, nisi ut luctus bibendum, felis est posuere lacus, non luctus orci justo ut odio.
+        </p>
+        <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu venenatis erat, id porta lorem.
+            Suspendisse potenti. Maecenas eu vestibulum tellus, eget facilisis metus. Sed lectus sem, congue non accumsan sed, facilisis a odio. Duis aliquam molestie efficitur.
+            Sed sem purus, lacinia nec justo at, euismod vulputate metus. Nam a rhoncus libero. Etiam aliquet sapien a semper gravida. Nullam feugiat volutpat tortor vel pharetra.
+            Donec lacinia efficitur enim, vitae dapibus quam ullamcorper eu. Quisque sit amet mollis magna, nec pellentesque odio. Etiam convallis tristique quam vel congue.
+            Duis nec mi eu sem iaculis hendrerit. Vivamus cursus, risus sed tincidunt mollis, erat justo faucibus leo, in tempor est eros et metus.
+            Integer tristique, nisi ut luctus bibendum, felis est posuere lacus, non luctus orci justo ut odio.
+        </p>
+    </main>
+
+
+    <?php require VIEWS_PATH . 'includes/footer.phtml'; ?>

@@ -13,7 +13,9 @@ $param = isset($url[2]) && $url[2] ? $url[2] : null;
 
 if (!class_exists($controller = "Code\Controller\\" . ucfirst($controller) . 'Controller')) {
 
-    die("404 - Page Not Found");
+    echo (new \Code\View\View('404.phtml'))->render();
+
+    die;
 }
 
 if (!method_exists($controller, $action)) {
